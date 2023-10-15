@@ -39,7 +39,7 @@ const Header = () => {
             <Link to="/" className="navbar-brand">
               🛒 Ecommerce App
             </Link>
-               auth?.user?.role === 1 ? "admin" : ""
+               {auth?.user?.role === 1 ? <div className="btn btn-success"> Admin </div> : ""
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <SearchInput />
               <li className="nav-item">
